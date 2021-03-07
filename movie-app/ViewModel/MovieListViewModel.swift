@@ -33,16 +33,11 @@ class MovieListViewModel: MovieListViewModelProtocol {
     }
     private var dataSource: [CellType] = []
     private var backup: [CellType] = []
-    private var favorites: [Int] = []{
-        didSet{
-            setData()
-        }
-    }
+    private var favorites: [Int] = []
     
     var reloadDataClosure: (() -> ())?
     
     init() {
-        getFavorites()
         gridPresentation = false
     }
     

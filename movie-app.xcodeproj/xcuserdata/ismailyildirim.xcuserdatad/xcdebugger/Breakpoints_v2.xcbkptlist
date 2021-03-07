@@ -3,4 +3,54 @@
    uuid = "FB6E0378-FDDE-4B4F-9A2F-F519DDF18408"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B67FD0FB-3399-480C-BEB2-812C724644BE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "movie-app/ViewModel/MovieListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "getFavorites()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B67FD0FB-3399-480C-BEB2-812C724644BE - 634d312096f935dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "movie_app.MovieListViewModel.getFavorites() -&gt; ()"
+                  moduleName = "movie-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ismailyildirim/Desktop/movie-app/movie-app/movie-app/ViewModel/MovieListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "33">
+               </Location>
+               <Location
+                  uuid = "B67FD0FB-3399-480C-BEB2-812C724644BE - 2c9ab01c4207bd46"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;Swift.Int&gt;) -&gt; () in movie_app.MovieListViewModel.getFavorites() -&gt; ()"
+                  moduleName = "movie-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ismailyildirim/Desktop/movie-app/movie-app/movie-app/ViewModel/MovieListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
+                  offsetFromSymbolStart = "42">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
