@@ -90,16 +90,16 @@ class DatabaseManager: DatabaseManagerProtocol {
         
     }
     
-        func removeAll() {
-            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-            let managedContext = appDelegate.persistentContainer.viewContext
-            let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Favorites")
-            let request = NSBatchDeleteRequest(fetchRequest: fetch)
-            do {
-                try managedContext.execute(request)
-    
-            } catch let err {
-                print(err)
-            }
+    func removeAll() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Favorites")
+        let request = NSBatchDeleteRequest(fetchRequest: fetch)
+        do {
+            try managedContext.execute(request)
+            
+        } catch let err {
+            print(err)
         }
+    }
 }

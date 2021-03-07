@@ -14,8 +14,7 @@ protocol MovieDetailViewModelProtocol {
     var voteCount : String! { get }
     var isFavorite:Bool! { get }
     func getData()
-    func addFavorite()
-    func updateFavorite()
+    func addFavorite() 
 }
 class MovieDetailViewModel: MovieDetailViewModelProtocol {
     
@@ -57,10 +56,6 @@ class MovieDetailViewModel: MovieDetailViewModelProtocol {
         getFavoriteData()
     }
     
-    func updateFavorite() {
-        
-    }
-    
     func getFavoriteData(){
         DispatchQueue.main.async {
             DatabaseManager.shared.get(id: self.id) { (result) in
@@ -77,8 +72,5 @@ class MovieDetailViewModel: MovieDetailViewModelProtocol {
                 self.updateUI?()
             }
         }
-        
     }
-    
-    
 }

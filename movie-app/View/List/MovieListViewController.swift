@@ -12,7 +12,7 @@ class MovieListViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    lazy var viewModel: MovieListViewModelProtocol = {
+    private lazy var viewModel: MovieListViewModelProtocol = {
         return MovieListViewModel()
     }()
     
@@ -80,7 +80,7 @@ extension MovieListViewController: UICollectionViewDelegate, UICollectionViewDat
         //The last cell is reserved for the load more button.
         switch viewModel.getItem(index: indexPath.row) {
         case .movie(_):
-            if self.viewModel.gridPresentation {
+            if self.viewModel.gridPresentation {    
                 return CGSize(width: (self.collectionView.frame.width - 10) / 2 , height: 200)
             }else{
                 return CGSize(width: self.collectionView.frame.width , height: 200)
